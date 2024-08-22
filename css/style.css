@@ -143,7 +143,7 @@ h6 {
   right: 0;
   position: absolute;
   width: 100%;
-  height: .0625rem;
+  height: .125rem;
   background-color: #000;
   border-radius: 30px
 }
@@ -289,9 +289,9 @@ body::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #000;
+  border-bottom: 2px solid #000;
   padding-top: .5rem;
-  width: 95%;
+  width: 87%;
   padding-left: 0;
   padding-right: 0
 }
@@ -975,7 +975,7 @@ body::after {
   justify-content: flex-start;
   height: 100%;
   padding-top: 16px;
-  border: 2px solid #6f7d5c;
+  border: 1px solid #6f7d5c;
   border-radius: 10px;
   -webkit-transform: translateX(-15px);
   transform: translateX(-15px);
@@ -1598,6 +1598,9 @@ body::after {
   .info-header__presentation {
     line-height: 16px
   }
+  .phone-header__icon {
+    width: 16px
+  }
   .menu__left {
     width: 100%;
     align-items: center;
@@ -1760,7 +1763,7 @@ body::after {
     line-height: 152%
   }
   .map-infastruktur__location img {
-    width: 23px
+    width: 26px
   }
   .map-infastruktur__location {
     -webkit-column-gap: .375rem;
@@ -1996,7 +1999,7 @@ body::after {
     line-height: 21px
   }
   .right-planing__item {
-    padding: 7px 30px
+    padding: 0
   }
   .item-right__text::after {
     font-size: 7px
@@ -2149,7 +2152,7 @@ body::after {
     width: 100%
   }
   .form-questions__body {
-    max-width: 90%;
+    max-width: 85%;
     width: 100%
   }
   .form-questions__title {
@@ -2160,9 +2163,9 @@ body::after {
     flex-direction: column
   }
   .form-questions__subtitle {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 16px
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21.28px
   }
   .content-more__button {
     font-size: 14px;
