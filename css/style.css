@@ -382,7 +382,7 @@ body::after {
 }
 .menu-open .info-header__presentation {
   color: #fff;
-  border: 1px solid #fff
+  border: 2px solid #fff
 }
 .info-header__presentation:hover {
   background: #899e6d;
@@ -660,15 +660,19 @@ body::after {
 .info-hero__title {
   font-size: 223px;
   font-weight: 700;
-  line-height: 304px;
+  line-height: 170px;
   letter-spacing: -6.69px;
   text-transform: uppercase;
-  text-align: center
+  text-align: center;
+  margin-top: 1.9375rem;
+  margin-bottom: 1.9375rem
 }
 .info-hero__items {
   display: flex;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
+  width: 97%;
+  margin: auto
 }
 .info-hero__description {
   font-size: 28px;
@@ -700,7 +704,7 @@ body::after {
   align-items: center;
   gap: 10px;
   border-radius: 10px;
-  border: 1px solid #000;
+  border: 2px solid #000;
   transition: all .3s;
   line-height: 38px
 }
@@ -1556,6 +1560,12 @@ body::after {
     row-gap: 2.75rem
   }
 }
+@media (max-width:365px) {
+  .info-hero__buttons {
+    width: 97%;
+    justify-content: space-between
+  }
+}
 @media (max-width:61.99875em) {
   .infastruktur__box {
     flex-direction: column-reverse;
@@ -1572,6 +1582,11 @@ body::after {
   .icon-menu {
     width: 2.75rem;
     height: 1.3125rem
+  }
+  .icon-menu span,
+  .icon-menu::after,
+  .icon-menu::before {
+    height: .0625rem
   }
   .popup__content {
     background: #fff
@@ -1595,8 +1610,14 @@ body::after {
     background-color: #000;
     width: 125%
   }
+  .header__container {
+    border-bottom: 1px solid #000
+  }
   .info-header__presentation {
     line-height: 16px
+  }
+  .menu-open .info-header__presentation {
+    border: 1px solid #fff
   }
   .phone-header__icon {
     width: 16px
@@ -1693,7 +1714,6 @@ body::after {
     line-height: 16px
   }
   .hero__container {
-    margin-top: 1.25rem;
     row-gap: 1.25rem
   }
   .hero__banner {
@@ -1703,28 +1723,29 @@ body::after {
   }
   .info-hero__title {
     margin-bottom: .75rem;
-    letter-spacing: -1.65px
+    letter-spacing: -1.65px;
+    margin-top: .875rem;
+    margin-bottom: .875rem
   }
   .info-hero__items {
     flex-direction: column;
-    row-gap: 1rem
+    row-gap: 1rem;
+    width: 100%
   }
   .info-hero__description {
     text-align: center;
     line-height: 152%
   }
   .info-hero__buttons {
-    width: 100%;
-    justify-content: center;
-    -webkit-column-gap: 10px;
-    -moz-column-gap: 10px;
-    column-gap: 10px
+    width: 95%;
+    justify-content: space-between
   }
   .mobbtn {
     display: flex
   }
   .presentation {
-    line-height: 16px
+    line-height: 16px;
+    border: 1px solid #000
   }
   .banner-hero__info {
     flex-direction: column;
@@ -2624,14 +2645,14 @@ body::after {
       font-size: calc(3.4375rem + 10.5*(100vw - 22.5rem)/ 67.5)
     }
   }
-  @supports (line-height:clamp(3.125rem ,-2.1666666667rem + 23.5185185185vw ,19rem)) {
+  @supports (line-height:clamp(3.125rem ,0.625rem + 11.1111111111vw ,10.625rem)) {
     .info-hero__title {
-      line-height: clamp(3.125rem ,-2.1666666667rem + 23.5185185185vw ,19rem)
+      line-height: clamp(3.125rem ,.625rem + 11.1111111111vw ,10.625rem)
     }
   }
-  @supports not (line-height:clamp(3.125rem ,-2.1666666667rem + 23.5185185185vw ,19rem)) {
+  @supports not (line-height:clamp(3.125rem ,0.625rem + 11.1111111111vw ,10.625rem)) {
     .info-hero__title {
-      line-height: calc(3.125rem + 15.875*(100vw - 22.5rem)/ 67.5)
+      line-height: calc(3.125rem + 7.5*(100vw - 22.5rem)/ 67.5)
     }
   }
   @supports (font-size:clamp(0.875rem ,0.5833333333rem + 1.2962962963vw ,1.75rem)) {
